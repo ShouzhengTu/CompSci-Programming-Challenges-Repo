@@ -1,6 +1,0 @@
-apple,1.5,-20
-banana,0.75,-12
-milk,2.3,-8
-bread,1.2,20
-eggs,2.0,-12
-Strawberry,3.0,40

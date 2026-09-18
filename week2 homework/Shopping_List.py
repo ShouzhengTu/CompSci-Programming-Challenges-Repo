@@ -30,8 +30,8 @@ def get_storage():
     return stock
    
 def update_stock_status(quantity,item,stock):
-    stock[item]["quantity"]=-quantity
-    if stock[item]["quantity"] == 0:
+    stock[item]["quantity"]-=quantity
+    if stock[item]["quantity"] <= 0:
         del stock[item]
     
 #adding items 
@@ -93,7 +93,7 @@ def get_quantity():
     return int(quantity)
     
 def add_cart(cart,stock):
-    for item in stock:
+    for item in list(stock):
         alert(f"checkout {item} (Y/N)?")
         answer = input('').strip().upper()
 

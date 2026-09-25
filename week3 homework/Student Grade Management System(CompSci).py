@@ -173,7 +173,7 @@ def viewAll(grades):
 
 def add_individual_grades(grades):
     try:
-        individual_grades = [int(i) for i in input("Please input a grade:").strip().split(',')]
+        individual_grades = [int(i) for i in input("Please input a grade or grades seperated by(','):").strip().split(',')]
         grades.append(individual_grades)
         write_grades(grades)
     except:
@@ -206,4 +206,5 @@ def main():
 main()
 
 
+         
          

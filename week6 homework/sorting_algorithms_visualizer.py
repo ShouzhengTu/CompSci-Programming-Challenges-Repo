@@ -41,7 +41,7 @@ def selection_sort(arr):
     return snapshot
 
 def parition(arr, low, high):
-    snapshot = [arr.copy()]
+    snapshot = []
     pivot = arr[low]
     i = low
     j = high

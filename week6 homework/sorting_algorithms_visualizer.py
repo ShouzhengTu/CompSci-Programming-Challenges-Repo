@@ -131,7 +131,7 @@ def animations(snapshot,bars,fig,ax,txt):
     fps = 120
 
     def update(frames):
-        txt.set_text(f"ARRAYACESSED = {frames}")
+        txt.set_text(f"FRRAMES = {frames}")
         for bar,height in zip(bars,snapshot[frames]):
             bar.set_height(height)
         return (*bars,txt)
